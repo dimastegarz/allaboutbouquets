@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+	  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>allaboutbouquets.com</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.css" rel="stylesheet">
+	  
+	<!--Jquery -->
+    <link rel="stylesheet" href="vendor/jquery/jquery-ui.css" type="text/css">
+   
+	<script src="vendor/jquery/jquery.js"></script>
+	<script src="vendor/jquery/jquery-ui.js"></script>
+   <style>
+	#zoom-button {
+      width: 55px;
+    }
+    #fontname-button,
+    #fontsize-button {
+      width: 45px;
+    }
+    #forecolor-button {
+      width: 50px;
+    }
+    #hilitecolor-button {
+      width: 70px;
+    }
+    #bold {
+      font-weight: bold;
+    }
+    #italic {
+      font-style: italic;
+    }
+    #underline {
+      text-decoration: underline;
+    }
+    .toolbar {
+      font-size: .75em;
+    }
+    #page {
+      width: 440px;
+      left: 50%;
+      position: relative;
+      margin-left: -226px;
+      height: 450px;
+      border: 1px solid #888;
+      box-shadow: 7px 7px 3px #ccc;
+      font-size: 11px;
+      font-family: "Lucida Grande";
+      zoom: 100%;
+      padding: 5px;
+      white-space: pre-line;
+      overflow: scroll;
+    }
+    .wrap {
+      width: 588px;
+    }  
+	  
+  #red, #green, #blue {
+    float: left;
+    clear: left;
+    width: 300px;
+    margin: 15px;
+  }
+  #swatch {
+    width: 120px;
+    height: 100px;
+    margin-top: 18px;
+    margin-left: 350px;
+    background-image: none;
+  }
+  #red .ui-slider-range { background: #ef2929; }
+  #red .ui-slider-handle { border-color: #ef2929; }
+  #green .ui-slider-range { background: #8ae234; }
+  #green .ui-slider-handle { border-color: #8ae234; }
+  #blue .ui-slider-range { background: #729fcf; }
+  #blue .ui-slider-handle { border-color: #729fcf; }
+	  
+	  
+  </style>
+	
+  </head>
+
+  <body>
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3">allaboutbouqets</span>
+      <span class="site-heading-lower">Albouquets</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Albouquets</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="about.html">Order</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="store.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-section about-heading">
+      <div class="container">
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Customize your favourite bouquets</span>
+                  <span class="section-heading-lower">ORDER NOW!</span>
+                </h2>
+                <div class="widget">
+ 
+ 
+  <h6>Customize now!</h6>
+
+					
+<fieldset>
+    <legend>Choose date </legend>
+		<p>Date: <input type="text" id="picker"></p>
+</fieldset>
+					
+  <fieldset>
+    <legend>Type Bouquets </legend>
+    <label for="radio-1">Bouquet Snack</label>
+    <input type="radio" name="radio-1" id="radio-1">
+    <label for="radio-2">Bouquet Boneka</label>
+    <input type="radio" name="radio-1" id="radio-2">
+    <label for="radio-3">Bouquet Bunga</label>
+    <input type="radio" name="radio-1" id="radio-3">
+	<label for="radio-4">Bouquet Parsel</label>
+    <input type="radio" name="radio-1" id="radio-4">  
+  </fieldset>
+ 
+ 
+					
+  <fieldset>
+    <legend>Wrap Type </legend>
+    <label for="checkbox-1">Flannel</label>
+    <input type="checkbox" name="checkbox-1" id="checkbox-1">
+    <label for="checkbox-2">Plastic</label>
+    <input type="checkbox" name="checkbox-2" id="checkbox-2">
+    <label for="checkbox-3">Fabric Bouquets</label>
+    <input type="checkbox" name="checkbox-3" id="checkbox-3">
+  </fieldset>
+ 
+ 
+  <fieldset>
+    <legend>Choose Colour </legend>
+    <div class="ui-widget-content" style="border:0;">
+  
+<div id="red"></div>
+<div id="green"></div>
+<div id="blue"></div>
+ 
+<div id="swatch" class="ui-widget-content ui-corner-all"></div>
+		</fieldset>
+ 
+</div>
+		<br>		  
+	<legend>Type Your Snack Here</legend>			  
+	<div class="wrap">
+  	<div class="toolbar">
+      <select id="fontsize">
+        <option selected disabled>Size</option>
+        <option value="1">8px</option>
+        <option value="2">9px</option>
+        <option value="3">10px</option>
+        <option value="4">11px</option>
+        <option value="5">12px</option>
+        <option value="6">14px</option>
+        <option value="7">18px</option>
+        <option value="8">24px</option>
+        <option value="9">30px</option>
+        <option value="10">36px</option>
+      </select>
+      <button id="bold">B</button>
+      <button id="italic">I</button>
+      <button id="underline">U</button>
+		
+ 
+</div>
+		<pre id="page" contenteditable="true">
+		</pre>
+</div>
+<div>
+	<button><a href="thankyou.html">Order Now! </button>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; Dimastegarz K3517019</p>
+      </div>
+    </footer>
+	     <!-- Bootstrap core JavaScript -->
+
+	  
+	<script>
+  $( function() {
+  $( "#datepicker" ).datepicker({
+      numberOfMonths: 3,
+      showButtonPanel: true
+    });
+  } );
+  </script>
+	 <script>
+  $( function() {
+  $( "input" ).checkboxradio();
+  } );
+  </script>
+  <script>
+  $( function() {
+    var page = $( "#page" );
+    var basicControls = [ "#print", "#bold", "#italic", "#undo", "#redo" ];
+    var valueControls = [ "#fontsize", "#forecolor", "#hilitecolor", "#backcolor", "fontname" ];
+ 
+    $( "#print" ).button({
+      "icon": "ui-icon-print",
+      "showLabel": false
+    });
+    $( "#redo" ).button({
+      "icon": "ui-icon-arrowreturnthick-1-e",
+      "showLabel": false
+    });
+    $( "#undo" ).button({
+      "icon": "ui-icon-arrowreturnthick-1-w",
+      "showLabel": false
+    });
+ 
+    $( ".toolbar" ).controlgroup();
+    $( "#zoom" ).on( "selectmenuchange", function() {
+      page.css({ "zoom": $( this ).val() });
+    })
+    $( basicControls.concat( valueControls ).join( ", " ) ).on( "click change selectmenuchange",
+      function() {
+        document.execCommand(
+          this.id,
+          false,
+          $( this ).val()
+        );
+      } );
+    $( "form" ).on( "submit", function( event ) {
+      event.preventDefault();
+    });
+  } );
+  </script>
+	  <script>
+  $( function() {
+    function hexFromRGB(r, g, b) {
+      var hex = [
+        r.toString( 16 ),
+        g.toString( 16 ),
+        b.toString( 16 )
+      ];
+      $.each( hex, function( nr, val ) {
+        if ( val.length === 1 ) {
+          hex[ nr ] = "0" + val;
+        }
+      });
+      return hex.join( "" ).toUpperCase();
+    }
+    function refreshSwatch() {
+      var red = $( "#red" ).slider( "value" ),
+        green = $( "#green" ).slider( "value" ),
+        blue = $( "#blue" ).slider( "value" ),
+        hex = hexFromRGB( red, green, blue );
+      $( "#swatch" ).css( "background-color", "#" + hex );
+    }
+ 
+    $( "#red, #green, #blue" ).slider({
+      orientation: "horizontal",
+      range: "min",
+      max: 255,
+      value: 127,
+      slide: refreshSwatch,
+      change: refreshSwatch
+    });
+    $( "#red" ).slider( "value", 255 );
+    $( "#green" ).slider( "value", 140 );
+    $( "#blue" ).slider( "value", 60 );
+  } );
+  </script>
+			
+  </body>
+	
+	
+
+
+</html>
